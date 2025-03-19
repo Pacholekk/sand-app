@@ -6,14 +6,14 @@ export default function Buttons() {
     <div className="flex space-x-4 p-4">
       {" "}
       {/* Użyj flex z odstępami i paddingiem */}
-      <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-        text1
+      <button className=" text-black px-4 py-2 rounded rounded hover:underline">
+        B I S T R O
       </button>
-      <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-        text2
+      <button className=" text-black px-4 py-2 rounded hover:underline">
+        C A F F E
       </button>
-      <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-        text2
+      <button className=" text-black px-4 py-2 rounded  rounded hover:underline">
+        B E A C H<span className="inline-block w-2"></span>B A R
       </button>
     </div>
   );
