@@ -1,29 +1,44 @@
-import "../src/index.css";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"; // Assuming you're using React Router
 
 interface ButtonData {
   text: string;
   path?: string;
   className?: string;
 }
+
 interface ButtonsProps {
   buttons: ButtonData[];
+  className?: string; // Added this prop to pass styling to the container
 }
 
-export default function Buttons({ buttons }: ButtonsProps) {
-  const navigate = useNavigate();
+function Buttons({ buttons, className = "" }: ButtonsProps) {
   return (
-    <div className="flex justify-center space-x-4 p-4">
-      {buttons.map((button, index) => (
-        <button
-          className={button.className}
-          key={index}
-          onClick={() => button.path && navigate(button.path)}
-        >
-          {button.text}
-        </button>
-      ))}
+    <div className={className}>
+      {buttons.map((button, index) =>
+        button.path ? (
+          <Link
+            key={index}
+            to={button.path}
+            className={`uppercase tracking-wider text-sm hover:text-gray-600 transition-colors ${
+              button.className || ""
+            }`}
+          >
+            {button.text}
+          </Link>
+        ) : (
+          <span
+            key={index}
+            className={`uppercase tracking-wider text-sm ${
+              button.className || ""
+            }`}
+          >
+            {button.text}
+          </span>
+        )
+      )}
     </div>
   );
 }
+
+export default Buttons;

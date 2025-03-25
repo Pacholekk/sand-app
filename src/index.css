@@ -1,29 +1,32 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Rigot";
+  src: url("../fonts/RigotRegular/font.woff") format("woff"),
+    url("../fonts/RigotRegular/font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html,
 body,
 #root {
   margin: 0 !important;
   padding: 0 !important;
-  height: 100vh !important;
-  width: 100vw !important;
-  overflow: hidden !important;
-}
-
-.swiper {
-  height: 100% !important;
-  width: 100% !important;
-}
-
-.swiper-slide {
-  height: 100% !important;
-  width: 100% !important;
-}
-
-.swiper-slide img {
   min-height: 100vh !important;
-  min-width: 100vw !important;
-  object-fit: cover !important;
+  width: 100vw !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  background-color: #f3ede0;
 }
+
 button {
   z-index: 10;
+}
+.sand-text {
+  font-family: "Rigot", sans-serif !important;
+  font-size: 10rem !important;
+  color: #864444;
+  letter-spacing: 0.05em;
+
+  /* Add any other styling you want for the SAND text */
 }
