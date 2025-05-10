@@ -10,16 +10,16 @@ interface ButtonData {
 interface HeaderProps {
   buttonsL: ButtonData[];
   buttonsR: ButtonData[];
+  restaurantType: string;
 }
 
-function Header({ buttonsL, buttonsR }: HeaderProps) {
+function Header({ buttonsL, buttonsR, restaurantType }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Combine all buttons for mobile menu
   const allButtons = [...buttonsL, ...buttonsR];
 
   return (
@@ -58,7 +58,7 @@ function Header({ buttonsL, buttonsR }: HeaderProps) {
           <h1 className="font-['Rigot',_sans-serif] text-4xl md:text-[5rem] text-black tracking-wider text-center">
             SAND
           </h1>
-          <p className="tracking-widest pb-7">B I S T R O</p>
+          <p className="tracking-widest pb-7">{restaurantType}</p>
         </div>
 
         <div className="justify-self-end hidden md:flex space-x-5 pr-10">

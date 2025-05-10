@@ -1,5 +1,5 @@
 import React from "react";
-import "../src/index.css"; // Upewnij się, że zawiera style poniżej
+import "../index.css";
 import { Outlet } from "react-router-dom";
 import Background from "../components/Background";
 import Buttons from "../components/Buttons";
