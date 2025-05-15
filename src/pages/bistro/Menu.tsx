@@ -44,7 +44,12 @@ export default function Menu() {
         style={{ backgroundImage: "url('/images/sandBg.jpg')" }}
       >
         <div className="container mx-auto px-4">
-          <MenuContent />
+          <MenuContent
+            type="B I S T R O"
+            content="ŚNIADANIA - LUNCH - COCTAILS"
+            food1="ŚNIADANIE"
+            food2="BAJGLE"
+          />
         </div>
       </main>
       <Footer />

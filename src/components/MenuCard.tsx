@@ -81,7 +81,7 @@ export default function MenuCard({
       <div className="text-center mt-8">
         <Link
           className="px-6 py-2 border border-black tracking-wider hover:bg-black hover:text-white transition-colors"
-          to={"/bisto/menu"}
+          to={"/Bistro/Menu"}
         >
           PEŁNE MENU
         </Link>

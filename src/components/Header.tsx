@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Buttons from "./Buttons";
 
 interface ButtonData {
@@ -55,9 +56,12 @@ function Header({ buttonsL, buttonsR, restaurantType }: HeaderProps) {
         </div>
 
         <div className="flex flex-col items-center justify-center col-span-1">
-          <h1 className="font-['Rigot',_sans-serif] text-4xl md:text-[5rem] text-black tracking-wider text-center">
+          <Link
+            className="font-['Rigot',_sans-serif] text-4xl md:text-[5rem] text-black tracking-wider text-center"
+            to={"/"}
+          >
             SAND
-          </h1>
+          </Link>
           <p className="tracking-widest pb-7">{restaurantType}</p>
         </div>
 
