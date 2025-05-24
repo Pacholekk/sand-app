@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import MenuContent from "../../components/MenuContent";
+import MenuPDF from "../../components/MenuPDF";
 
 export default function Menu() {
   return (
@@ -44,12 +44,7 @@ export default function Menu() {
         style={{ backgroundImage: "url('/images/sandBg.jpg')" }}
       >
         <div className="container mx-auto px-4">
-          <MenuContent
-            type="B I S T R O"
-            content="ŚNIADANIA - LUNCH - COCTAILS"
-            food1="ŚNIADANIE"
-            food2="BAJGLE"
-          />
+          <MenuPDF pdfPath="/menu/menu.pdf" width={1000} />
         </div>
       </main>
       <Footer />

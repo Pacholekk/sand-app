@@ -20,7 +20,7 @@ export default function BistroPage() {
             path: "/Bistro/Menu",
           },
           {
-            text: "GALERIA",
+            text: "EVENTY",
             className: "text-black px-4 py-2 rounded hover:underline",
           },
         ]}

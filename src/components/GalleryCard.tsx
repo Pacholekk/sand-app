@@ -20,11 +20,7 @@ export default function GalleryCard() {
           </div>
         ))}
       </div>
-      <div className="text-center mt-8">
-        <button className="px-6 py-2 border border-black tracking-wider hover:bg-black hover:text-white transition-colors">
-          WIĘCEJ ZDJĘĆ
-        </button>
-      </div>
+      <div className="text-center mt-8"></div>
     </section>
   );
 }
